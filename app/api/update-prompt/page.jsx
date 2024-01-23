@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useSearchParams } from "next/dist/client/router"; // Import useSearchParams from the correct location
