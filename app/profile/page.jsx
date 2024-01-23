@@ -1,7 +1,7 @@
 "use client"
 
 import {useEffect,useState} from 'react'
-import { useSession } from 'next-auth';
+import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/router';
 import Profile from '@components/Profile';
 
