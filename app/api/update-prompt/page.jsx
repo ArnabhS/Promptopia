@@ -18,7 +18,7 @@ const UpdatePrompt = () => {
     const getPromptDetails = async () => {
       try {
         if (promptId) {
-          const response = await fetch(/api/prompt/${promptId});
+          const response = await fetch(`/api/prompt/${promptId}`);
           if (!response.ok) {
             throw new Error("Failed to fetch prompt details");
           }
@@ -47,7 +47,7 @@ const UpdatePrompt = () => {
         throw new Error("Missing PromptId!");
       }
 
-      const response = await fetch(/api/prompt/${promptId}, {
+      const response = await fetch(`/api/prompt/${promptId}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
